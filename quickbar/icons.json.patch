@@ -1,0 +1,46 @@
+[
+  {
+    "op": "add",
+    "path": "/items/patman:teleporter",
+    "value": {
+      "label": "^admin;Teleporter",
+      "icon": "/quickbar/pat/teleporter.png",
+      "weight" : -1050,
+      "action": [ "exec", "/quickbar/pat/teleporter.lua" ],
+      "condition" : [ "admin" ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/items/patman:instanceworlds",
+    "value": {
+      "label": "^admin;Instance Worlds",
+      "icon": "/quickbar/pat/instanceworlds.png",
+      "weight" : -1049,
+      "action": [ "exec", "/quickbar/pat/instanceworlds.lua" ],
+      "condition" : [ "admin" ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/items/patman:weaponupgrade",
+    "value": {
+      "label": "^admin;Weapon Upgrade",
+      "icon": "/quickbar/pat/weaponupgrade.png",
+      "weight" : -1000,
+      "action" : [ "pane", "/interface/scripted/weaponupgrade/weaponupgradegui.config" ],
+      "condition" : [ "admin" ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/items/patman:vehiclerepair",
+    "value": {
+      "label": "^admin;Vehicle Repair",
+      "icon": "/items/generic/other/autochip.png",
+      "weight" : -1000,
+      "action" : [ "pane", "/interface/scripted/vehiclerepair/vehiclerepairgui.config" ],
+      "condition" : [ "admin" ]
+    }
+  }
+]
