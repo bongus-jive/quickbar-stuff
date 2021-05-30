@@ -23,6 +23,17 @@
   },
   {
     "op": "add",
+    "path": "/items/patman:pethealing",
+    "value": {
+      "label": "^admin;Pet Healing",
+      "icon": "/quickbar/pat/pethealing/pethealing.png",
+      "weight" : -1000,
+      "action" : [ "pane", "/quickbar/pat/pethealing/pethealing.config" ],
+      "condition" : [ "admin" ]
+    }
+  },
+  {
+    "op": "add",
     "path": "/items/patman:weaponupgrade",
     "value": {
       "label": "^admin;Weapon Upgrade",
@@ -37,7 +48,7 @@
     "path": "/items/patman:vehiclerepair",
     "value": {
       "label": "^admin;Vehicle Repair",
-      "icon": "/items/generic/other/autochip.png",
+      "icon": "/items/generic/other/autochip.png?crop=0;0;15;15",
       "weight" : -1000,
       "action" : [ "pane", "/interface/scripted/vehiclerepair/vehiclerepairgui.config" ],
       "condition" : [ "admin" ]
