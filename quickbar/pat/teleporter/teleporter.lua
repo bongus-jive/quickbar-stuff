@@ -1,4 +1,4 @@
-local cfg = root.assetJson("/quickbar/pat/teleporter.config")
+local cfg = root.assetJson("/quickbar/pat/teleporter/teleporter.config")
 local destinations = {}
 local onShip = player.worldId() == player.ownShipWorldId()
 

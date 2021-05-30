@@ -1,4 +1,4 @@
-local cfg = root.assetJson("/quickbar/pat/instanceworlds.config")
+local cfg = root.assetJson("/quickbar/pat/instanceworlds/instanceworlds.config")
 local worlds = root.assetJson("/instance_worlds.config")
 local destinations = {}
 

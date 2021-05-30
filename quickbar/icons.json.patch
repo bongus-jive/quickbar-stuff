@@ -4,9 +4,9 @@
     "path": "/items/patman:teleporter",
     "value": {
       "label": "^admin;Teleporter",
-      "icon": "/quickbar/pat/teleporter.png",
+      "icon": "/quickbar/pat/teleporter/teleporter.png",
       "weight" : -1050,
-      "action": [ "exec", "/quickbar/pat/teleporter.lua" ],
+      "action": [ "exec", "/quickbar/pat/teleporter/teleporter.lua" ],
       "condition" : [ "admin" ]
     }
   },
@@ -15,9 +15,9 @@
     "path": "/items/patman:instanceworlds",
     "value": {
       "label": "^admin;Instance Worlds",
-      "icon": "/quickbar/pat/instanceworlds.png",
+      "icon": "/quickbar/pat/instanceworlds/instanceworlds.png",
       "weight" : -1049,
-      "action": [ "exec", "/quickbar/pat/instanceworlds.lua" ],
+      "action": [ "exec", "/quickbar/pat/instanceworlds/instanceworlds.lua" ],
       "condition" : [ "admin" ]
     }
   },
