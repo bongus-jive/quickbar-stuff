@@ -53,5 +53,14 @@
       "action" : [ "pane", "/interface/scripted/vehiclerepair/vehiclerepairgui.config" ],
       "condition" : [ "admin" ]
     }
+  },
+  {
+    "op": "add",
+    "path": "/items/patman:freecheese",
+    "value": {
+      "label": "free cheese",
+      "icon": "/quickbar/pat/cheese.png",
+      "action": [ "exec", "/quickbar/pat/cheese.lua", "cheese" ]
+    }
   }
 ]
