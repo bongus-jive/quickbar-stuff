@@ -1,0 +1,34 @@
+[
+	[
+		{
+			"op" : "add",
+			"path" : "/maxStack",
+			"value" : 10000
+		},
+		{
+			"op" : "add",
+			"path" : "/rarity",
+			"value" : "legendary"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/itemAgingScripts"
+		},
+		{
+			"op" : "remove",
+			"path" : "/itemAgingScripts"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/builder"
+		},
+		{
+			"op" : "remove",
+			"path" : "/builder"
+		}
+	]
+]

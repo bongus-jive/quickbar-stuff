@@ -1,5 +1,5 @@
 {
-  "version" : "1.2",
+  "version" : "1.2.1",
   "author" : "patman",
   "description" : "a few quickbar things i added mostly just to make testing slightly less annoying\ni guess im sharing them\n\nthey all require admin mode\n\nthe things:\n- weapon upgrade anvil\n- vehicle repair\n- teleporter\n- instance world teleporter\n- pet healing\n- free cheese\n\nthe teleporter is just. the teleporter menu\ntheres a return option which is supposed to return you to wherever you last teleported from (it sometimes works)\ntheres also an option to deploy your mech right where you are\n\nthe instance world teleporter just reads instance_worlds.config and lists all of them\nit also tries to give them icons just based on their names and that works (mostly)\nadded this because typing /warp commands got a little bit annoying\n\nfree cheese is free cheese\n\n\nwill probably find more things to make less annoying in the future so might update this\n\n\n\nok join the funny place now and give me michelangelos thanks\n[h1]https://discord.gg/GdsQSgV[/h1]\nhttps://www.patreon.com/pathiccstar",
   "name" : "pat_quickbarstuff",
