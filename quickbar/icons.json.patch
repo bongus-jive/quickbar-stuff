@@ -1,0 +1,18 @@
+[
+  {
+    "op": "remove",
+    "path": "/items/patman:teleporter/condition"
+  },
+  {
+    "op": "remove",
+    "path": "/items/patman:pethealing/condition"
+  },
+  {
+    "op": "remove",
+    "path": "/items/patman:weaponupgrade/condition"
+  },
+  {
+    "op": "remove",
+    "path": "/items/patman:vehiclerepair/condition"
+  }
+]

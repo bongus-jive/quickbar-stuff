@@ -1,0 +1,10 @@
+{
+  "version" : "Unlocker 1.1",
+  "author" : "pat man",
+  "description" : "removes admin requirements from my quickbar stuff mod\n\nexcept from the instance world teleporter you should absolutely not have access to that\n\n\nthats it\n\n[h1]https://discord.gg/GdsQSgV[/h1]\nhttps://www.patreon.com/pathiccstar",
+  "name" : "pat_quickbarstuff_unlocker",
+  "friendlyName" : "funny quickbar stuff unlocker",
+  "steamContentId" : "2518779263",
+  "link" : "steam://url/CommunityFilePage/2518779263",
+  "includes" : ["pat_quickbarstuff"]
+}
