@@ -1,18 +1,26 @@
 [
-  {
-    "op": "remove",
-    "path": "/items/patman:teleporter/condition"
-  },
-  {
-    "op": "remove",
-    "path": "/items/patman:pethealing/condition"
-  },
-  {
-    "op": "remove",
-    "path": "/items/patman:weaponupgrade/condition"
-  },
-  {
-    "op": "remove",
-    "path": "/items/patman:vehiclerepair/condition"
-  }
+	[
+		{ "op": "test", "path": "/items/patman:teleporter/condition" },
+		{ "op": "remove", "path": "/items/patman:teleporter/condition" }
+	],
+	[
+		{ "op": "test", "path": "/items/patman:instanceworlds/condition" },
+		{ "op": "remove", "path": "/items/patman:instanceworlds/condition" }
+	],
+	[
+		{ "op": "test", "path": "/items/patman:deploymech/condition" },
+		{ "op": "remove", "path": "/items/patman:deploymech/condition" }
+	],
+	[
+		{ "op": "test", "path": "/items/patman:pethealing/condition" },
+		{ "op": "remove", "path": "/items/patman:pethealing/condition" }
+	],
+	[
+		{ "op": "test", "path": "/items/patman:weaponupgrade/condition" },
+		{ "op": "remove", "path": "/items/patman:weaponupgrade/condition" }
+	],
+	[
+		{ "op": "test", "path": "/items/patman:vehiclerepair/condition" },
+		{ "op": "remove", "path": "/items/patman:vehiclerepair/condition" }
+	]
 ]
