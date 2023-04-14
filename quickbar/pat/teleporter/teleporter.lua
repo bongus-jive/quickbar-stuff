@@ -1,3 +1,5 @@
+do
+
 local cfg = root.assetJson("/quickbar/pat/teleporter/teleporter.config")
 local destinations = {}
 local onShip = player.worldId() == player.ownShipWorldId()
@@ -22,3 +24,5 @@ player.interact("OpenTeleportDialog", {
 	includePlayerBookmarks = true,
 	destinations = destinations
 }, player.id())
+
+end
