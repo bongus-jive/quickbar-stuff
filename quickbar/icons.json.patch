@@ -53,5 +53,11 @@
       "action" : [ "pane", "/interface/scripted/vehiclerepair/vehiclerepairgui.config" ],
       "condition" : [ "admin" ]
     }
-  }
+  },
+	
+	{
+		"op" : "replace",
+		"path": "/items/starbound:mechassembly/icon",
+		"value" : "/interface/scripted/mechassembly/icon.png?crop=4;4;18;17?replace;777877=0000"
+	}
 ]
