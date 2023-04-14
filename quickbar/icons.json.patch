@@ -1,23 +1,23 @@
 [
   {
-    "op": "add",
-    "path": "/items/patman:teleporter",
-    "value": {
-      "label": "^admin;Teleporter",
-      "icon": "/quickbar/pat/teleporter/teleporter.png",
+    "op" : "add",
+    "path" : "/items/patman:teleporter",
+    "value" : {
+      "label" : "^admin;Teleporter",
+      "icon" : "/quickbar/pat/teleporter/teleporter.png",
       "weight" : -1050,
-      "action": [ "exec", "/quickbar/pat/teleporter/teleporter.lua" ],
+      "action" : [ "exec", "/quickbar/pat/teleporter/teleporter.lua" ],
       "condition" : [ "admin" ]
     }
   },
   {
-    "op": "add",
-    "path": "/items/patman:instanceworlds",
-    "value": {
-      "label": "^admin;Instance Worlds",
-      "icon": "/quickbar/pat/instanceworlds/instanceworlds.png",
+    "op" : "add",
+    "path" : "/items/patman:instanceworlds",
+    "value" : {
+      "label" : "^admin;Instance Worlds",
+      "icon" : "/quickbar/pat/instanceworlds/instanceworlds.png",
       "weight" : -1049,
-      "action": [ "exec", "/quickbar/pat/instanceworlds/instanceworlds.lua" ],
+      "action" : [ "exec", "/quickbar/pat/instanceworlds/instanceworlds.lua" ],
       "condition" : [ "admin" ]
     }
   },
@@ -33,33 +33,33 @@
     }
   },
   {
-    "op": "add",
-    "path": "/items/patman:pethealing",
-    "value": {
-      "label": "^admin;Pet Healing",
-      "icon": "/quickbar/pat/pethealing/pethealing.png",
+    "op" : "add",
+    "path" : "/items/patman:pethealing",
+    "value" : {
+      "label" : "^admin;Pet Healing",
+      "icon" : "/quickbar/pat/pethealing/pethealing.png",
       "weight" : -1000,
       "action" : [ "pane", "/quickbar/pat/pethealing/pethealing.config" ],
       "condition" : [ "admin" ]
     }
   },
   {
-    "op": "add",
-    "path": "/items/patman:weaponupgrade",
-    "value": {
-      "label": "^admin;Weapon Upgrade",
-      "icon": "/quickbar/pat/weaponupgrade.png",
+    "op" : "add",
+    "path" : "/items/patman:weaponupgrade",
+    "value" : {
+      "label" : "^admin;Weapon Upgrade",
+      "icon" : "/quickbar/pat/weaponupgrade.png",
       "weight" : -1000,
       "action" : [ "pane", "/interface/scripted/weaponupgrade/weaponupgradegui.config" ],
       "condition" : [ "admin" ]
     }
   },
   {
-    "op": "add",
-    "path": "/items/patman:vehiclerepair",
-    "value": {
-      "label": "^admin;Vehicle Repair",
-      "icon": "/items/generic/other/autochip.png?crop=0;0;15;15",
+    "op" : "add",
+    "path" : "/items/patman:vehiclerepair",
+    "value" : {
+      "label" : "^admin;Vehicle Repair",
+      "icon" : "/items/generic/other/autochip.png?crop=0;0;15;15",
       "weight" : -1000,
       "action" : [ "pane", "/interface/scripted/vehiclerepair/vehiclerepairgui.config" ],
       "condition" : [ "admin" ]
