@@ -29,7 +29,7 @@
       "icon" : "/quickbar/pat/deploy.png",
       "weight" : -1000,
       "action" : [ "exec", "/quickbar/pat/deploy.lua" ],
-      "condition" : [ "admin" ]
+      "condition" : [ "all", [ "admin", [ "playerProperty", "mechItemSet" ] ] ]
     }
   },
   {
