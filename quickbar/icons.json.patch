@@ -9,7 +9,7 @@
 	],
 	[
 		{ "op": "test", "path": "/items/patman:deploymech/condition" },
-		{ "op": "remove", "path": "/items/patman:deploymech/condition" }
+		{ "op": "replace", "path": "/items/patman:deploymech/condition", "value" : [ "playerProperty", "mechItemSet" ] }
 	],
 	[
 		{ "op": "test", "path": "/items/patman:pethealing/condition" },
