@@ -1,13 +1,19 @@
 require "/scripts/util.lua"
 
+local healing = false
+local healTimer = 0
+local frameTimer = 0
+local scungus
+
 function init()
-	healing = false
-	healTimer = 0
+  scungus = widget.getData("scungus")
+  scungus.file = scungus.file..":"
+  scungus.timer = 0
 end
 
 function update(dt)
-	frame = ((frame or 0) + dt / 3) % 1
-	widget.setImage("1984", "/quickbar/pat/pethealing/1984.png:"..math.floor(frame * 30))
+  scungus.timer = (scungus.timer + (dt / scungus.duration)) % 1
+	widget.setImage("scungus", scungus.file..math.floor(scungus.timer * scungus.frames))
 	
 	local input = widget.itemSlotItem("input")
 	local output = widget.itemSlotItem("output")
