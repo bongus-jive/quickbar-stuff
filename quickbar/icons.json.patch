@@ -1,74 +1,74 @@
 [
   {
-    "op" : "add",
-    "path" : "/items/patman:teleporter",
-    "value" : {
-      "label" : "^admin;Teleporter",
-      "icon" : "/quickbar/pat/teleporter/teleporter.png",
-      "weight" : -1050,
-      "action" : [ "exec", "/quickbar/pat/teleporter/teleporter.lua" ],
-      "condition" : [ "admin" ]
+    "op": "add",
+    "path": "/items/patman:teleporter",
+    "value": {
+      "label": "^admin;Teleporter",
+      "icon": "/quickbar/pat/teleporter/teleporter.png",
+      "weight": -1050,
+      "action": [ "exec", "/quickbar/pat/teleporter/teleporter.lua" ],
+      "condition": [ "admin" ]
     }
   },
   {
-    "op" : "add",
-    "path" : "/items/patman:instanceworlds",
-    "value" : {
-      "label" : "^admin;Instance Worlds",
-      "icon" : "/quickbar/pat/instanceworlds/instanceworlds.png",
-      "weight" : -1049,
-      "action" : [ "exec", "/quickbar/pat/instanceworlds/instanceworlds.lua" ],
-      "condition" : [ "admin" ]
+    "op": "add",
+    "path": "/items/patman:instanceworlds",
+    "value": {
+      "label": "^admin;Instance Worlds",
+      "icon": "/quickbar/pat/instanceworlds/instanceworlds.png",
+      "weight": -1049,
+      "action": [ "exec", "/quickbar/pat/instanceworlds/instanceworlds.lua" ],
+      "condition": [ "admin" ]
     }
   },
   {
-    "op" : "add",
-    "path" : "/items/patman:deploymech",
-    "value" : {
-      "label" : "^admin;Deploy Mech",
-      "icon" : "/quickbar/pat/deploy.png",
-      "weight" : -1000,
-      "action" : [ "exec", "/quickbar/pat/deploy.lua" ],
-      "condition" : [ "all", [ "admin", [ "playerProperty", "mechItemSet" ] ] ]
+    "op": "add",
+    "path": "/items/patman:deploymech",
+    "value": {
+      "label": "^admin;Deploy Mech",
+      "icon": "/quickbar/pat/deploy.png",
+      "weight": -1000,
+      "action": [ "exec", "/quickbar/pat/deploy.lua" ],
+      "condition": [ "all", [ "admin", [ "playerProperty", "mechItemSet" ] ] ]
     }
   },
   {
-    "op" : "add",
-    "path" : "/items/patman:pethealing",
-    "value" : {
-      "label" : "^admin;Pet Healing",
-      "icon" : "/quickbar/pat/pethealing/pethealing.png",
-      "weight" : -1000,
-      "action" : [ "pane", "/quickbar/pat/pethealing/pethealing.config" ],
-      "condition" : [ "admin" ]
+    "op": "add",
+    "path": "/items/patman:pethealing",
+    "value": {
+      "label": "^admin;Pet Healing",
+      "icon": "/quickbar/pat/pethealing/pethealing.png",
+      "weight": -1000,
+      "action": [ "pane", "/quickbar/pat/pethealing/pethealing.config" ],
+      "condition": [ "admin" ]
     }
   },
   {
-    "op" : "add",
-    "path" : "/items/patman:weaponupgrade",
-    "value" : {
-      "label" : "^admin;Weapon Upgrade",
-      "icon" : "/quickbar/pat/weaponupgrade.png",
-      "weight" : -1000,
-      "action" : [ "pane", "/interface/scripted/weaponupgrade/weaponupgradegui.config" ],
-      "condition" : [ "admin" ]
+    "op": "add",
+    "path": "/items/patman:weaponupgrade",
+    "value": {
+      "label": "^admin;Weapon Upgrade",
+      "icon": "/quickbar/pat/weaponupgrade.png",
+      "weight": -1000,
+      "action": [ "pane", "/interface/scripted/weaponupgrade/weaponupgradegui.config" ],
+      "condition": [ "admin" ]
     }
   },
   {
-    "op" : "add",
-    "path" : "/items/patman:vehiclerepair",
-    "value" : {
-      "label" : "^admin;Vehicle Repair",
-      "icon" : "/items/generic/other/autochip.png?crop=0;0;15;15",
-      "weight" : -1000,
-      "action" : [ "pane", "/interface/scripted/vehiclerepair/vehiclerepairgui.config" ],
-      "condition" : [ "admin" ]
+    "op": "add",
+    "path": "/items/patman:vehiclerepair",
+    "value": {
+      "label": "^admin;Vehicle Repair",
+      "icon": "/items/generic/other/autochip.png?crop=0;0;15;15",
+      "weight": -1000,
+      "action": [ "pane", "/interface/scripted/vehiclerepair/vehiclerepairgui.config" ],
+      "condition": [ "admin" ]
     }
   },
-	
-	{
-		"op" : "replace",
-		"path": "/items/starbound:mechassembly/icon",
-		"value" : "/interface/scripted/mechassembly/icon.png?crop=4;4;18;17?replace;777877=0000"
-	}
+
+  {
+    "op": "replace",
+    "path": "/items/starbound:mechassembly/icon",
+    "value": "/interface/scripted/mechassembly/icon.png?crop=4;4;18;17?replace;777877=0000"
+  }
 ]
