@@ -6,44 +6,53 @@ for k, _ in pairs(worlds) do table.insert(worldNames, k) end
 table.sort(worldNames)
 
 for i, icon in ipairs(icons) do
-  icon.destinations = {}
   icon.priority = icon.priority or 0
-  icon.sort = i
-end
-table.sort(icons, function(a, b) return (a.priority >= b.priority) and (a.sort < b.sort) end)
-
-local iconNames, iconPatterns = {}, {}
-for i = #icons, 1, -1 do
-  local icon = icons[i]
-  for _, name in ipairs(icon.names or {}) do iconNames[name] = icon end
-  for _, pattern in ipairs(icon.patterns or {}) do iconPatterns[pattern] = icon end
+  icon.sort = icon.sort or 0
+  icon.destinations = {}
+  icon.index = i
 end
 
-local iconDefault = { icon = "default", destinations = {} }
-table.insert(icons, iconDefault)
+table.sort(icons, function(a, b)
+  if a.priority == b.priority then return a.index < b.index end
+  return a.priority > b.priority 
+end)
+
+local defaultIcon = { icon = "default", destinations = {} }
+local matchIcons = {}
+for _, icon in ipairs(icons) do
+  for _, name in ipairs(icon.names or {}) do table.insert(matchIcons, { name = name, icon = icon }) end
+  for _, pattern in ipairs(icon.patterns or {}) do table.insert(matchIcons, { pattern = pattern, icon = icon }) end
+end
 
 local function findIcon(worldName)
-  local named = iconNames[worldName]
-  if named then return named end
+  local lower = worldName:lower()
 
-  for pattern, icon in pairs(iconPatterns) do
-    if worldName:lower():match(pattern) then return icon end
+  for _, match in ipairs(matchIcons) do
+    if (match.name and match.name == worldName)
+    or (match.pattern and lower:match(match.pattern)) then
+      return match.icon
+    end
   end
 
-  return iconDefault
+  return defaultIcon
 end
 
 for _, name in ipairs(worldNames) do
-  local world = worlds[name]
   local icon = findIcon(name)
 
   table.insert(icon.destinations, {
     name = name,
+    icon = icon.icon,
     warpAction = string.format("instanceworld:%s", name),
-    planetName = world.persistent and "^darkgray;persistent" or "",
-    icon = icon.icon
+    planetName = worlds[name].persistent and "^darkgray;persistent" or ""
   })
 end
+
+table.sort(icons, function(a, b) 
+  if a.sort == b.sort then return a.index < b.index end
+  return a.sort > b.sort
+end)
+table.insert(icons, defaultIcon)
 
 local destinations = {}
 for _, icon in ipairs(icons) do
