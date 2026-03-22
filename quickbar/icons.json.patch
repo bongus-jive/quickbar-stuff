@@ -23,6 +23,17 @@
   },
   {
     "op": "add",
+    "path": "/items/patman:warprandom",
+    "value": {
+      "label": "^admin;Warprandom",
+      "icon": "/quickbar/pat/warprandom/warprandom.png",
+      "weight": -1048,
+      "action": [ "pane", { "config": { "gui": { }, "scripts": [ "/quickbar/pat/warprandom/warprandom.lua" ] } } ],
+      "condition": [ "admin" ]
+    }
+  },
+  {
+    "op": "add",
     "path": "/items/patman:deploymech",
     "value": {
       "label": "^admin;Deploy Mech",
